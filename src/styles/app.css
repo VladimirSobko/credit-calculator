@@ -1,0 +1,60 @@
+@import 'colors.css';
+@import 'typography.css';
+@import 'buttons.css';
+@import 'checkbox.css';
+@import 'inputs.css';
+@import 'slider.css';
+
+
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)  {
+
+}
+
+@media screen
+  and (min-device-width: 992px) {
+  }
+
+.container {
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+}
+.title-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.wrapper {
+  width: 1080px;
+  margin: 0 auto;
+}
+.info-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.info-section {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.sliders-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.inputs-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.line {
+  background: #EEEEEE;
+  margin: 40px 0px 40px;
+}
+.check-and-btn-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

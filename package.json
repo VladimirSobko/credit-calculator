@@ -1,0 +1,17 @@
+{
+  "name": "norvik-styleguide",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build",
+    "prepublishOnly": "npm run build",
+    "start": "gulp & node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "gulp": "4.0.0",
+    "gulp-concat": "2.6.1"
+  }
+}

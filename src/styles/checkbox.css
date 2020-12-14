@@ -1,0 +1,78 @@
+.check-box-input {
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+}
+.check-box-input-default {
+  background: #EEEEEE;
+
+}
+/* 
+.check-box-input-hover {
+  border-image-source: linear-gradient(91.4deg, #4052A5 0%, #242F62 100%);
+}
+
+.check-box-input-checked {
+  background: linear-gradient(91.4deg, #4052A5 0%, #242F62 100%);
+} */
+
+.check-box-caption {
+  height: 40px;
+  width: 185px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+}
+
+.check-box-block {
+  height: 40px;
+  width: 240px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.checkbox__input input{
+    opacity: 0;
+}
+
+.checkbox__control {
+  display: inline-grid;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #EEEEEE;
+}
+.checkbox__control:hover {
+  background: #FFFFFF;
+  box-sizing: border-box;
+  border: 2px solid #242F62;
+}
+
+.checkbox__input {
+  display: grid;
+  grid-template-areas: "checkbox";
+  
+}
+
+.checkbox__control svg {
+  transition: transform 0.1s ease-in 25ms;
+  transform: scale(0);
+  transform-origin: bottom left;
+  color: #EEEEEE;
+}
+
+.checkbox__input input:checked
+ + .checkbox__control svg {
+   background: linear-gradient(91.4deg, #4052A5 0%, #242F62 100%);
+   border-radius: 10px;
+   transform: scale(1);
+}

@@ -1,0 +1,20 @@
+@import '../src/styles/colors.css';
+@import '../src/styles/typography.css';
+@import '../src/styles/buttons.css';
+@import '../src/styles/checkbox.css';
+@import '../src/styles/inputs.css';
+@import '../src/styles/slider.css';
+@import '../src/styles/app.css';
+
+/* @media only screen
+} */
+
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)  {
+
+}
+
+@media screen
+  and (min-device-width: 992px) {
+  }
