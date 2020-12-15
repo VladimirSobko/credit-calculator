@@ -35,7 +35,7 @@
         </div>
       </div>
       <div class="slider">
-        <input id="term-input-id" class="text-field text-field-default"  type="text" placeholder="Срок кредита">
+        <input id="term-input-id" class="text-field text-field-default"  type="text" placeholder="Срок кредита" disabled>
         <div>
           <input id="term-range-id" type="range" min="1" max="240" step="1" value="12"> 
         </div>
@@ -45,30 +45,39 @@
         </div>
       </div>
     </section>
-    <p id="mounth-pay-id" class="mounth-pay">Ваш ежемесячный платеж * - ... ₽ </p>
-    <section class="inputs-wrapper">
-      <input class="text-field text-field-default" type="text" placeholder="Фамилия Имя Отчество" required>
-      <input class="text-field text-field-default" type="text" placeholder="Телефон" required>
-      <input class="text-field text-field-default" type="text" placeholder="Электронная почта">
-    </section>
-    <hr class="line">
-    <section class="check-and-btn-wrapper">
-      <div class="check-box-block">
-        <div>
-          <label class="checkbox">
-            <span class="checkbox__input">
-              <input type="checkbox" name="checkbox">
-              <span class="checkbox__control">
-                <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden="true" focusable="false">
-                  <path fill='none' stroke='currentColor' stroke-width='3' d='M1.73 12.91l6.37 6.37L22.79 4.59' /></svg>
-              </span>
-            </span>
-          </label>
+    <p class="mounth-pay">Ваш ежемесячный платеж * - <span id = "month-payment"> 100 </span> ₽ </p>
+      <form>
+        <section class="inputs-wrapper">
+          <input class="text-field text-field-default" type="text" placeholder="Фамилия Имя Отчество" required>
+          <div class='input-box'>
+            <label for='name'>Телефон</label>
+            <input type='tel' name='name' value="+7" pattern="^((\+7|7|8)+([0-9]){10})$" required></input>
+          </div>
+          <div class='input-box'>
+            <label for='name'>Электронная почта</label>
+            <input type='email' name='name' placeholder="InputBox" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"></input>
+          </div>
+        </section>
+        <hr class="line">
+        <section class="check-and-btn-wrapper">
+          <div class="check-box-block">
+            <div>
+              <label class="checkbox">
+                <span class="checkbox__input">
+                  <input type="checkbox" name="checkbox" required>
+                  <span class="checkbox__control">
+                    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden="true" focusable="false">
+                      <path fill='none' stroke='currentColor' stroke-width='3' d='M1.73 12.91l6.37 6.37L22.79 4.59' /></svg>
+                  </span>
+                </span>
+              </label>
+            </div>
+          <span class="check-box-caption">Я принимаю условия передачи информации</span>
         </div>
-      <span class="check-box-caption">Я принимаю условия передачи информации</span>
-    </div>
-    <button class="btn btn-primary">Отправить</button>
+        <button class="btn btn-primary">Отправить</button>
+      </form> 
   </section>
+
   <div class="rate-text">
     <span>* При ставке 8,8% годовых</span>
   </div>
