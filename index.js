@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express()
 const path = require('path')
+require('dotenv').config();
 
 app.use(express.static(__dirname + '/public'));
 
@@ -13,7 +14,7 @@ app.get('/', function (req, res) {
 })
 
 
-app.listen(3002, function () {
+app.listen(process.env.PORT || 3000, function () {
   console.log('Styleguide will be served on port 3002');
 });
 
