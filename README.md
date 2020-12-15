@@ -6,7 +6,7 @@ https://credit-calculator-page.herokuapp.com/
 
 ## Start locally:
 
-1.npm i 
-2.npm start
+>1.npm i 
+>2.npm start
 
 
