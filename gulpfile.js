@@ -2,7 +2,7 @@ const gulp = require('gulp');
 const concat = require('gulp-concat');
 
 function styles() {
-  return gulp.src('./src/styles/app.css')
+  return gulp.src('./src/styles/general.css')
    .pipe(concat('./public/styleguide.min.css'))
    .pipe(gulp.dest('.'));
 }

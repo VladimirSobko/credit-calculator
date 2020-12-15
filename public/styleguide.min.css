@@ -1,13 +1,10 @@
-@import '../src/styles/colors.css';
-@import '../src/styles/typography.css';
-@import '../src/styles/buttons.css';
-@import '../src/styles/checkbox.css';
-@import '../src/styles/inputs.css';
-@import '../src/styles/slider.css';
-@import '../src/styles/app.css';
+@import 'colors.css';
+@import 'typography.css';
+@import 'buttons.css';
+@import 'checkbox.css';
+@import 'inputs.css';
+@import 'slider.css';
 
-/* @media only screen
-} */
 
 @media only screen
   and (min-device-width: 768px)
@@ -18,3 +15,55 @@
 @media screen
   and (min-device-width: 992px) {
   }
+
+.container {
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+}
+.title-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.wrapper {
+  width: 1080px;
+  margin: 0 auto;
+}
+.info-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.info-section {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.sliders-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.inputs-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.inputs-wrapper .input-box{
+  height: 40px;
+}
+
+.inputs-wrapper .input-box label{
+  padding-bottom: 3px;
+}
+
+.line {
+  background: #EEEEEE;
+  margin: 40px 0px 40px;
+}
+.check-and-btn-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
