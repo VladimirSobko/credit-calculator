@@ -4,13 +4,14 @@ const path = require('path')
 
 app.use(express.static(__dirname + '/public'));
 
-app.get('/', function (req, res) {
+app.get('/example', function (req, res) {
   res.sendFile(path.join(__dirname, '/public/styleguide.html'))
 })
 
-app.get('/example', function (req, res) {
-  res.sendFile(path.join(__dirname, '/public/example.html'))
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, '/public/main.html'))
 })
+
 
 app.listen(3002, function () {
   console.log('Styleguide will be served on port 3002');
