@@ -18,8 +18,9 @@
 
 .container {
   display: flex;
-  flex: row;
-  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .title-wrapper {
   display: flex;
