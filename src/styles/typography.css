@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 .text-paragraph {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -8,7 +10,7 @@
   text-align: left;
 }
 .title-one {
-  font-family: PT Sans Caption;
+  font-family: 'PT Sans Caption';
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -17,7 +19,7 @@
   text-align: left;
 }
 .title-two{
-  font-family: PT Sans Caption;
+  font-family: 'PT Sans Caption';
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -26,7 +28,7 @@
   text-align: left;
 }
 .mounth-pay {
-  font-family: Roboto;
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;

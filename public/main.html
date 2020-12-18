@@ -25,7 +25,7 @@
     <hr class="line">
     <section class="sliders-wrapper">
       <div class="slider">
-        <input id="credit-input" class="text-field text-field-default" value="3000000 P" type="text" placeholder="Сумма кредита">
+        <input id="credit-input" class="text-field text-field-default" value="300000" type="text" placeholder="Сумма кредита">
         <div>
           <input id="credit-slider" type="range" min="300000" max="8000000" step="50000" value="3000000"> 
         </div>
@@ -48,14 +48,17 @@
     <p class="mounth-pay">Ваш ежемесячный платеж * - <span id = "month-payment"> 100 </span> ₽ </p>
       <form>
         <section class="inputs-wrapper">
-          <input class="text-field text-field-default" type="text" placeholder="Фамилия Имя Отчество" required>
-          <div class='input-box'>
-            <label for='name'>Телефон</label>
-            <input type='tel' name='name' value="+7" pattern="^((\+7|7|8)+([0-9]){10})$" required></input>
+          <div class="input-wrapper">  
+            <input id="username" class="text-field text-field-default" type="text" placeholder=" " required>
+            <label class="label-input" for="username">Фамилия Имя Отчество </label>
           </div>
-          <div class='input-box'>
-            <label for='name'>Электронная почта</label>
-            <input type='email' name='name' placeholder="InputBox" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"></input>
+          <div class="input-wrapper">  
+            <input class="text-field text-field-default"  type="tel" id="phone" value="" placeholder=" " pattern="^((\+7|7|8)+([0-9]){10})$" required />
+            <label class="label-input" for="phone"> Телефон </label>
+          </div>
+          <div class="input-wrapper">  
+            <input class="text-field text-field-default" type='email' name='email' placeholder=" " required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"></input>
+            <label class="label-input" for="email"> Электронная почта </label>
           </div>
         </section>
         <hr class="line">

@@ -5,7 +5,6 @@
 @import 'inputs.css';
 @import 'slider.css';
 
-
 @media only screen
   and (min-device-width: 768px)
   and (max-device-width: 1024px)  {
@@ -50,15 +49,12 @@
   flex-direction: row;
   justify-content: space-between;
 }
-
 .inputs-wrapper .input-box{
   height: 40px;
 }
-
 .inputs-wrapper .input-box label{
   padding-bottom: 3px;
 }
-
 .line {
   background: #EEEEEE;
   margin: 40px 0px 40px;

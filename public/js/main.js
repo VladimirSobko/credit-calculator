@@ -8,7 +8,7 @@ const monthPaymentSpan = document.getElementById('month-payment');
 
 creditRange.addEventListener('input', (e) => {
   sumOfCredit = creditRange.value;
-  creditInput.value = creditRange.value + " " + "P";
+  creditInput.value = creditRange.value;
   creditRange.step = customStep(creditRange.value);
 
   monthPayment();
@@ -16,14 +16,16 @@ creditRange.addEventListener('input', (e) => {
 
 creditInput.addEventListener('input', (e) => {
   creditRange.value = creditInput.value;
+  sumOfCredit = creditInput.value;
+  monthPayment();
 });
 
 termRange.addEventListener('input', (e) => {
   if(termRange.value < 12) {
     termInput.value = `${termRange.value} мес.`;
   } else {
-    var years = (termRange.value / 12).toFixed();
-    var months = termRange.value % 12;
+    let years = (termRange.value / 12).toFixed();
+    let months = termRange.value % 12;
     termInput.value = `${years} лет и ${months} мес.`;
   } 
 
@@ -42,11 +44,11 @@ function customStep(value) {
 
 
 function monthPayment() {
- var sum = creditRange.value; // S
- var term = termRange.value; // T
- var percent = 8.8/12; // P
+ let sum = creditRange.value; // S
+ let term = termRange.value; // T
+ let percent = 8.8/12; // P
 
- var monthPayment = sum * (percent * Math.pow(1 + percent/100, term) / 100 / (Math.pow(1 + percent/100, term)-1));
+ let monthPayment = sum * (percent * Math.pow(1 + percent/100, term) / 100 / (Math.pow(1 + percent/100, term)-1));
 
   monthPaymentSpan.textContent = monthPayment.toFixed(2);
 }
